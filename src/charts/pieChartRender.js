@@ -1,5 +1,6 @@
-import getData from '../../test/getData.js';
-import getPieData from "../modules/getPieData";
+import getData from '../action/getData.js';
+import getPieData from "../action/getPieData";
+import Highcharts from '../action/highcharts';
 
 const URL = "http://localhost:3000/chart1test";
 

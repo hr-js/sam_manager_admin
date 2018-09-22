@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Stock from "./Stock";
 import Pie from "./Pie";
+import Stock from "./Stock";
+
 
 class App extends React.Component  {
   render() {
     return (
       <div>
-        <Stock />
         <Pie />
+        <Stock/>
       </div>
     );
   }

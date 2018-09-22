@@ -12,7 +12,9 @@ class Pie extends React.Component{
 
   render() {
     return (
-      <div id="pie">
+      <div>
+        <div id="pie">
+        </div>
       </div>
     );
   }

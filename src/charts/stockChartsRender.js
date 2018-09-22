@@ -1,5 +1,6 @@
-import getData from '../modules/getData';
-import getStockData from "../modules/getStockData";
+import getData from '../action/getData';
+import getStockData from "../action/getStockData";
+import Highcharts from '../action/highstock';
 
 const URL = "http://localhost:3000/chart1test";
 
