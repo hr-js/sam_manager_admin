@@ -23,7 +23,7 @@ const styles = theme => {
 };
 
 function Menu(props) {
-  const { classes, open } = props;
+  const { classes, open, items } = props;
   return (
     <Drawer
       variant="persistent"
@@ -37,9 +37,9 @@ function Menu(props) {
         </IconButton>
       </div>
       <MenuList>
-        <MenuItem>Recent</MenuItem>
-        <MenuItem>User</MenuItem>
-        <MenuItem>Chart</MenuItem>
+        {items.map((item, index) => {
+          return <MenuItem key={index}>{item}</MenuItem>;
+        })}
       </MenuList>
     </Drawer>
   );

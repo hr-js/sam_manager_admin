@@ -7,7 +7,8 @@ import Frame from '../component/Frame';
 
 const mapStateToProps = state => {
   return {
-    isOpen: state.isOpen
+    isOpen: state.isOpen,
+    items: state.items
   };
 };
 
