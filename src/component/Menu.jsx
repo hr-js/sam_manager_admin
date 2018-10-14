@@ -7,18 +7,20 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import { withStyles } from '@material-ui/core/styles';
 
-const styles = theme => ({
-  drawerPaper: {
-    position: 'relative'
-  },
-  drawerHeader: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'flex-end',
-    padding: '0 8px',
-    ...theme.mixins.toolbar
-  }
-});
+const styles = theme => {
+  return {
+    drawerPaper: {
+      position: 'relative'
+    },
+    drawerHeader: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'flex-end',
+      padding: '0 8px',
+      ...theme.mixins.toolbar
+    }
+  };
+};
 
 function Menu(props) {
   const { classes, open } = props;
