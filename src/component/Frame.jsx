@@ -5,9 +5,14 @@ import Menu from './Menu';
 function Frame(props) {
   const { isOpen, onClick, items } = props;
   return (
-    <Header onClick={onClick}>
-      <Menu open={isOpen} items={items} />
-    </Header>
+    <div>
+      <Header onClick={onClick} open={isOpen} />
+      <Menu
+        open={isOpen}
+        items={items}
+        onClick={onClick}
+      />
+    </div>
   );
 }
 
