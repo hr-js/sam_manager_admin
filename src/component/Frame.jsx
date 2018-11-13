@@ -3,12 +3,12 @@ import Header from './Header';
 import Menu from './Menu';
 
 function Frame(props) {
-  const { isOpen, onClick, items } = props;
+  const { open, onClick, items } = props;
   return (
     <div>
-      <Header onClick={onClick} open={isOpen} />
+      <Header onClick={onClick} open={open} />
       <Menu
-        open={isOpen}
+        open={open}
         items={items}
         onClick={onClick}
       />

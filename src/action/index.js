@@ -1,8 +1,8 @@
 const OPEN_MENU = 'OPEN_MENU';
 
-export const openMenu = isOpen => {
+export const openMenu = open => {
   return {
     type: OPEN_MENU,
-    isOpen
+    open
   };
 };

@@ -7,7 +7,7 @@ import Main from '../component/Main';
 
 const mapStateToProps = state => {
   return {
-    open: state.isOpen
+    open: state.open
   };
 };
 

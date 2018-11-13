@@ -1,8 +1,8 @@
-export const menu = (state = { isOpen: false, items: [] }, action) => {
+export const menu = (state = { open: false, items: [] }, action) => {
   switch (action.type) {
     case 'OPEN_MENU':
       return Object.assign({}, state, {
-        isOpen: !state.isOpen,
+        open: !state.open,
         items: ['Recent', 'Users', 'Chart']
       });
     default:
