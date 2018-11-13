@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import Menu from './Menu';
-import Main from './Main';
+import Main from '../container/Main';
 
 function Frame(props) {
   const { isOpen, onClick, items } = props;
@@ -13,7 +13,7 @@ function Frame(props) {
         items={items}
         onClick={onClick}
       />
-      <Main open={isOpen}/>
+      <Main/>
     </div>
   );
 }
